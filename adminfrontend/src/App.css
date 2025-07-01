@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+  background-color: #E9E9E9;
+  color: #222222;
+  /* background-color: #111 */
+}
+.app-content{
+  display: flex;
+}
+@media (max-width:955px){
+  .app-content{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}

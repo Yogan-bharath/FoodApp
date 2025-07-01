@@ -1,0 +1,222 @@
+:root{
+    --body-back:#F3F3F3;
+    --color:#9b232f;
+    --color2:#ED3237;
+    --food-color:#FF3C1F;
+    --font-color:#111111;
+    --background-color:#0A0A0A;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{margin-top: 4px;
+    width:60px;
+    /* margin-right: auto; */
+    mix-blend-mode:multiply;
+}
+.nav-bar{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 0.7em; */
+     margin:  0.2vw 4vw;
+}
+.nav-ul{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    /* margin-right: auto; */
+    gap: 20px;
+}
+.nav-ul li{
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 0.7em 1.6em;
+    border-radius: 30px;
+    position: relative;
+    transition:all ease 0.4s; 
+    overflow: hidden;
+    font-weight: 500;
+}
+.nav-ul li a{
+color: #0A0A0A;
+ z-index: 10;
+}
+.nav-ul li::after{
+    content: '';
+    background-color: var(--font-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    bottom: -100%;
+    z-index: -3;
+    border-radius: 60%;
+    /* opacity: 0; */
+    transition:all ease 0.4s; 
+}
+.nav-ul li:hover a{
+    cursor: pointer;
+    color: var(--body-back);
+}
+.nav-ul li:hover::after{
+    border-radius:0;
+    bottom:0;
+}
+.nav-right{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: auto; */
+    gap: 40px;
+    padding: 0.1em 2em;
+}
+
+.img{
+    /* border: 2px solid black; */
+    width: 3vw;
+    position: relative;
+    /* display: inline-block; */
+}
+.img:hover{
+    cursor: pointer;
+}
+.bucket-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.nav-login-btn{
+    padding: 1em 2em;
+    border-radius: 999px;
+    background-color: var(--food-color);
+    color: var(--body-back);
+    border: none;
+    font-size: 0.9em
+}
+.nav-login-btn:hover{
+    cursor: pointer;
+}
+
+.ri-shopping-cart-2-fill{
+    /* color: #FF3C1F; */
+    color: #111;
+    font-size: 30px;
+    position: relative;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    background-color: #FF3C1F;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50px;
+}
+
+.profile{
+    cursor: pointer;
+}
+.navbar-profile:hover .nav-profile-dropdown{
+    display: inline;
+
+}
+.navbar-profile{
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.nav-profile-dropdown{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border: 1px solid black;
+    background-color: #111;
+    color: #fff;
+    padding: .6rem;
+    gap: 10px;
+    bottom: -175%;
+    left: -20%;
+    z-index: 10;
+    display: none;
+    border-radius: 10px;
+}
+
+.nav-profile-dropdown li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    gap: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+.nav-profile-dropdown li i{
+    color: #FF3C1F;
+    font-size: 25px;
+}
+.orders p{
+    color: #fff;
+}
+.login-button {
+  background-color: #FF3C1F;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(255, 60, 31, 0.3);
+}
+
+.login-button:hover {
+  background-color: #e6331a;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(255, 60, 31, 0.4);
+}
+
+.login-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 12px rgba(255, 60, 31, 0.2);
+}
+
+.login-button:focus {
+  outline: 2px solid #ffb9ac;
+  outline-offset: 3px;
+}
+
+@media (max-width:715px){
+    .nav-ul{
+        position: fixed;
+        bottom: 0%;
+        left:0%;
+        /* border: 2px solid black; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #4d4d4df0;
+        border: none;
+        padding: .5rem;
+        z-index: 1000;
+        /* border-radius: 10px; */
+        /* width: fit-content; */
+    }
+    .nav-ul li{
+        background-color: #222222;
+        
+    }
+    .nav-ul li:hover{
+        border: 2px solid #DBCF78;
+    }
+     .nav-ul li a{
+        color: #fff
+     }
+}
