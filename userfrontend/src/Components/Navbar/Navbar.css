@@ -220,3 +220,10 @@ color: #0A0A0A;
         color: #fff
      }
 }
+
+@media (max-width:436px){
+    .nav-ul li{
+    padding: 0.4em 1em;
+   
+}
+}
