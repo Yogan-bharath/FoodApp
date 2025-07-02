@@ -8,8 +8,6 @@ import {useGSAP} from '@gsap/react'
 import{ gsap } from 'gsap';
 const Home = () => {
   const [category,setcategory] = useState('all')
-  // const [view] = useRef(null)
-
   useGSAP(()=>{
         gsap.from("#left",{
             y:-200,
@@ -23,14 +21,13 @@ const Home = () => {
             opacity:0,
             duraction:.7,
              delay:1.3
-
         })
   },[])
   
   return (
     <>
     <div className='header'>
-        <div className='video'>
+        <div className='video' onMouseEnter={()=>gsap.to(".cursor",{scale:3})}>
             {/* <div className='View'></div> */}
             <video src={video} loop muted autoPlay></video>
         </div>

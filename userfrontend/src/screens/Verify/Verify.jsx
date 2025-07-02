@@ -15,10 +15,9 @@ const Verify = () => {
     const verifyPayment = async()=>{
         try{
             const res = axios.post(`${url}/api/order/verify`,{success,orderId})
-            if(res.data.message=='Not Paid')
-                navigate('/')
-            else {
-                navigate('/myorders')
+            if(res.data.message=='Not Paid') return navigate('/')
+            else{
+                return navigate('/myorders')
             }
         }
         catch(error){
@@ -28,6 +27,7 @@ const Verify = () => {
 
     useEffect(()=>{
         verifyPayment()
+        navigate('/myorders')
     },[])
 
   return (

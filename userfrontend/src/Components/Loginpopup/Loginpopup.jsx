@@ -51,7 +51,7 @@ const Loginpopup = ({setshowlogin}) => {
         <div className='login-container'>
             <div className='login-div'>
                 <div className='login-head'>
-                    {loginstate=='sign'? <h1 className='lors'>Login</h1>:<h1 className='lors'>Sing Up</h1> }
+                    {loginstate=='sign'? <h1 className='lors'>Login</h1>:<h1 className='lors'>Sign Up</h1> }
                     <i onClick={()=>{(setshowlogin(false))}} class="ri-close-large-line"></i>
                 </div>
                 <form onSubmit={onSubmitHandler} className='form'>

@@ -52,6 +52,7 @@
     overflow: hidden;
     max-height:650px;
     position: relative;
+    /* border: 2px solid black; */
 }
 video{
     object-fit:cover;
