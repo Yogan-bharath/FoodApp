@@ -202,7 +202,7 @@ color: #0A0A0A;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #4d4d4df0;
+        background-color: #4d4d4d;
         border: none;
         padding: .5rem;
         z-index: 1000;
@@ -227,3 +227,13 @@ color: #0A0A0A;
    
 }
 }
+
+@media (max-width:376px){
+    .nav-ul li{
+    padding: 0.4em .5em;
+    font-size: .9em;
+   
+}
+}
+
+
