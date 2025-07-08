@@ -19,7 +19,7 @@ const Footer = () => {
     </div>
 
     <div className="footer-socials">
-      <a href="#"><i class="ri-linkedin-fill"></i></a>
+      <a href="https://www.linkedin.com/in/yogan-bharath-058567269/"><i class="ri-linkedin-fill"></i></a>
       <a href="#"><i className="ri-instagram-line"></i></a>
       <a href="#"><i className="ri-twitter-fill"></i></a>
     </div>
