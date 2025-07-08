@@ -240,13 +240,13 @@ color: #0A0A0A;
     /* background-color: #4d4d4d; */
 }
 
-.nav-ul li:hover i{
+.nav-ul li:hover svg{
     color:chartreuse;
 }
-.Home i,.Menu i,.Contact-Us i{
+.Home svg,.Menu svg,.Contact-Us svg{
     display: inline-block;
     color: #F3F3F3;
-    font-size: 24px;
+    height: 24px;
     font-weight: 400;
 }
     .Home,.Menu,.Contact-Us{
