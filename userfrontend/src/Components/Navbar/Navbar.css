@@ -136,7 +136,7 @@ color: #0A0A0A;
     display: flex;
     flex-direction: column;
     position: absolute;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: #111;
     color: #fff;
     padding: .6rem;
@@ -191,6 +191,9 @@ color: #0A0A0A;
   outline: 2px solid #ffb9ac;
   outline-offset: 3px;
 }
+.Home i,.Menu i,.Contact-Us i{
+    display: none;
+}
 
 @media (max-width:715px){
     .nav-ul{
@@ -210,11 +213,7 @@ color: #0A0A0A;
         /* width: fit-content; */
     }
     .nav-ul li{
-        background-color: #222222;
-        
-    }
-    .nav-ul li:hover{
-        border: 2px solid #DBCF78;
+        background-color: #222222;   
     }
      .nav-ul li a{
         color: #fff
@@ -223,17 +222,45 @@ color: #0A0A0A;
 
 @media (max-width:436px){
     .nav-ul li{
-    padding: 0.4em 1em;
-   
+    padding: 0.4em .6em;  
+}
+.nav-ul{
+    height: 58px;
 }
 }
 
-@media (max-width:376px){
+@media (max-width:385px){
     .nav-ul li{
     padding: 0.4em .5em;
-    font-size: .9em;
-   
+    font-size: .7em;
+    border: none;
+    background-color: #4d4d4d;
+}
+.nav-bar{
+    /* background-color: #4d4d4d; */
+}
+
+.nav-ul li:hover i{
+    color:chartreuse;
+}
+.Home i,.Menu i,.Contact-Us i{
+    display: inline-block;
+    color: #F3F3F3;
+    font-size: 24px;
+    font-weight: 400;
+}
+    .Home,.Menu,.Contact-Us{
+        width: 74px;
+        /* height: 100%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+    width:50px;
 }
 }
+
 
 
