@@ -191,7 +191,7 @@ color: #0A0A0A;
   outline: 2px solid #ffb9ac;
   outline-offset: 3px;
 }
-.Home i,.Menu i,.Contact-Us i{
+.nav-ul li svg{
     display: none;
 }
 
@@ -239,6 +239,9 @@ color: #0A0A0A;
 .nav-bar{
     /* background-color: #4d4d4d; */
 }
+.nav-ul li svg{
+    display: inline-block;
+}
 
 .nav-ul li:hover svg{
     color:chartreuse;
@@ -261,6 +264,5 @@ color: #0A0A0A;
     width:50px;
 }
 }
-
 
 
